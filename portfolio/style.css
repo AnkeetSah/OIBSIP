@@ -1,0 +1,829 @@
+body{
+  max-width: 100%;
+  /* height: 100vh; */
+  background: black;
+}
+.home{
+  max-width: 100%;
+  height: 100vh;
+
+  
+}.about{
+  max-width: 100%;
+  height: 100vh;
+ 
+  display: flex;
+}
+
+.work{
+  max-width: 100%;
+  height: auto;
+
+  padding-top: 40px;
+}
+.contact{
+  max-width: 100%;
+  height: 100vh;
+
+ 
+}
+.aboutpic{
+
+  width: 40%;
+  text-align: right;
+  
+}
+.aboutpic img{
+ width: 60%;
+ height: 70%;
+ border-radius: 10px;
+ margin-top: 80px;
+ margin-right: 40px;
+ outline: 10px solid gray;
+}
+.aboutdesc{
+ color: white;
+  width: 55%;
+  padding-top:90px ;
+}
+.aboutdesc h1{
+  font-size: 60px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+       display: flex; 
+      justify-content: space-evenly;
+ width: 100%;
+  height: 50px;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 20px;
+
+}
+
+
+
+.headername{
+ color: white;
+  max-width: 100%;
+  text-align: center;
+  font-size: 35px;
+
+  margin-left: 62px;
+}
+.headername span{
+  color:maroon;
+}
+
+
+
+.header_link{
+max-width: 100%;
+margin-left: 300px;
+
+}
+.header_link li{
+  float: left;
+  margin-left: 50px;
+  list-style-type:none ;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+
+.header_link li {
+position: relative;
+
+margin-left: 50px;
+}
+
+.header_link li::before {
+content: " ";
+position: absolute;
+top: 30px;
+left: -1px;
+width: 0%; /* Start with no border width */
+height: 10%;
+background: red;
+transition: width 0.3s ease-in-out; /* Transition the border width */
+}
+
+.header_link li:hover::before {
+width: 105%; /* Increase border width on hover */
+}
+
+
+
+.bio_image{
+ 
+  max-width: 100%;
+  text-align: right;
+
+}
+.bio_image img{
+  /* width: 420px; */
+  height: 420px;
+  border-radius: 50%;
+  margin-top: 120px;
+  transform: rotate(-7deg);
+  outline: 10px solid white;
+}
+.bio_name{
+ font-size: 30px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bio{
+
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.intro{
+  padding-left: 40px;
+  color: white;
+  margin-top: -40px;
+}
+.intro h2{
+  color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro :nth-child(3){
+  font-size: 50px;
+  font-family: c;
+}
+.intro :nth-child(2){
+  text-decoration: underline;
+  color: maroon;
+}
+.about li{
+  list-style: none;
+  float: left;
+  top: 30px;
+  cursor: pointer;
+}
+.about li:nth-child(2){
+  margin-left: 50px;
+}
+.about li:nth-child(3){
+  margin-left: 50px;
+}
+li a{
+  text-decoration: none;
+  color: white;
+}
+.aboutinfo{
+  margin-top: 80px;
+}
+.aboutinfo li{
+  float: none;
+  margin-left: 0px;
+} .aboutinfo li:nth-child(2){
+  margin-left: 0px;
+}
+.aboutinfo li:nth-child(3){
+  margin-left: 0px;
+}
+.skills{
+  margin-top: 30px;
+  font-size: larger;
+}
+.details{
+  display: flex;
+}
+.details .backend{
+  margin-left: 30px;
+}
+.experience{
+  position: relative;
+  margin-top: -26px;
+  left: 30px;
+}
+.experience::before{
+  content: " ";
+position: absolute;
+top: 25px;
+left: -1px;
+width: 50%; /* Start with no border width */
+height: 10%;
+background: red;
+display: none;
+transition: width 0.3s ease-in-out; /* Transition the border width */
+}
+
+.skill{
+  position: relative;
+  margin-top: -26px;
+}
+.skill::before{
+  content: "";
+position: absolute;
+top: 25px;
+left: -1px;
+width: 50%; /* Start with no border width */
+height: 10%;
+background: red;
+display: none;
+transition: width 0.3s ease-in-out; /* Transition the border width */
+}
+
+.education{
+  position: relative;
+  margin-top: -26px;
+  left: 160px;
+}
+.education::before{
+  content: "";
+position: absolute;
+top: 25px;
+left: -1px;
+width: 50%; /* Start with no border width */
+height: 10%;
+background: red;
+display: none;
+transition: width 0.3s ease-in-out; /* Transition the border width */
+}
+
+
+.show-before::before {
+  display: block;
+}
+
+.work{
+  height: 94vh;
+}
+.workHead{
+  width: 84%;
+  margin: auto;
+  margin-bottom: 40px;
+  padding-left: 37px;
+  font-size: 40px;
+ 
+}
+.projectbox{
+ padding-left: 23px;
+  height: 480px;
+  width: 82%;
+  margin: auto;
+  display: flex;
+ 
+}
+.pbchild{
+  width: 32%;
+  border: 5px solid maroon;
+ 
+  margin-right: 25px;
+  height: 480px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ }
+
+.pbinnerchild{
+  background: white;
+  height: 70%;
+  width: 80%;
+  background-size: cover;
+  border-radius: 25px;    
+}
+.pbinnerchild img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.pbinnerchildlink{
+  height: 15%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+ .pbinnerchildlink h1{
+  font-size: medium;
+  border: 3px solid maroon;
+  height:24px;
+  padding: 5px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+ }  
+
+ button{
+margin: auto;
+ padding: 5px 20px;
+  color: white;
+  background-color: black;
+  border: solid maroon 2px;
+  border-radius: 5px;
+  background: #b51212;
+  text-decoration: none;
+  color: white;
+}
+
+ a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.message{
+
+  width:auto;
+  height: 400px;
+  margin: auto;
+}
+
+.message p{
+  text-align: center;
+  color: white;
+}
+.message h1{
+  text-align: center;
+  color: maroon;
+  font-size: 50px;
+  margin-top: -8px;
+  
+}
+
+.wayToContact{ 
+  height: 100px;
+  width: 700px;
+  margin: 30px auto;
+  border: 4px solid maroon;
+  border-radius: 50px;
+display: flex;
+justify-content: space-evenly;
+}
+.wayToContact img{
+  width: 30px;
+  border-radius: 30%;
+  
+  
+}
+.wayToContact h2{
+   display: flex;
+   align-items: center;
+}
+.wayToContact a{
+ margin-left: 10px;
+ text-decoration: none;
+ color: white;
+}
+
+.seeMore{
+  margin-top: -150px;
+}
+
+
+@media screen and (max-width:850px) {
+header{
+  background-color: rgb(24, 34, 34);
+  height: auto;
+}
+
+header{
+     position: fixed;
+     z-index: 2;
+     height: 90px;
+     margin-top: 0px;
+     font-size: small;
+     
+    }
+      .header_link{
+        position: fixed;
+        left: -130%
+  }
+.headername{
+  margin-left: 75px;
+  width: 920px;
+  font-size: 23px;
+}
+
+.bar {
+  width: 55px;
+  height: 10px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(243, 237, 237);
+  font-size: 40px;
+  margin: 5px 20px  ;
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar1{
+    transform: translateY(14px) rotate(45deg);
+  }
+
+  .hamburger.active .bar3 {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+
+  .header_link {
+    background-color: rgb(43, 54, 54);
+    padding-top: 160px;
+    padding-bottom: 20px;
+    height: auto;
+  } 
+  .header_link li{
+    font-size: larger;
+   width: 45%;
+   margin-top: 30px;
+    display: block;
+  }
+
+  .header_link.active {
+    left: 0%;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .bio{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .bio_image{
+    text-align: center;
+    margin-top: -90px;
+    width: 100%;
+  }
+  .bio_name{
+
+    margin-top: 70px
+  }
+  .intro{
+    text-align: center;
+  }
+
+  .about{
+    width: 100%;
+    margin-top: -50px;
+    flex-direction: column;
+
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .work{
+   
+    width: 100%;
+  }
+  .projectbox{
+  
+    text-align: center;
+  }
+  
+  .aboutpic{
+    width: 100%;   
+        text-align: center;
+        height: auto;
+       
+  }
+  .aboutpic img{
+    width: 60%; 
+    margin-right: -2px;   
+    height: 480px;  
+  } 
+  
+  .aboutdesc{
+    width: 90%;
+   text-align: center;
+   margin: auto;
+  }
+  .projectbox{
+    width: 100%;
+   padding-left: 0px;
+   justify-content: space-evenly;
+  }
+
+  .pbchild{
+    width: 30%;
+    margin-right: 0px;
+  }
+
+.work{
+  height: auto;
+  padding-bottom: 100px;
+}
+  
+.contact{
+  height: auto;
+  width: 104%;
+}
+.wayToContact{
+  margin-left: -50px ;
+}
+
+.skills{
+  padding-left: 192px;
+  
+}
+.home{
+  width: 100%;
+}
+.workHead{
+  width: 95%;
+}
+header{
+  width: 100%;
+}
+.hamburger{
+ margin-right: 30px;
+  /* margin-left: -20px; */
+    }
+    .seeMore{
+      margin-top: -70px;
+      margin-bottom:20px ;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:540px) {
+  
+  .seeMore{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .message{
+    width: 100vw;
+  }
+  .wayToContact{
+    width: 90vw;
+    margin: auto;
+    padding: 0px;
+    height: 80px;
+  }
+  .wayToContact h2{
+    font-size: small;
+    margin-left: -28px;
+    margin-right: 9px;
+  }
+  .wayToContact img{
+    width: 20px;
+    margin-left: 34px;
+  }
+  .projectbox{
+    flex-direction: column;
+    width: 100vw;
+    height: 770px;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -20px;
+    margin-bottom: -30px;
+
+  }
+  
+  .work button{
+    margin-left: 36%;
+  }
+
+  .about{
+    width: 100%;
+
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .aboutpic{
+    width: 95%;
+    margin: auto;
+   
+  }
+  .aboutpic img{
+    width: 80%;
+    height: 400px;
+    
+  }
+  .aboutdesc{
+    width: 100%;
+  }
+  .aboutdesc h1{
+    margin-top: -60px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .details{
+    width: 100%;
+    flex-direction: column;
+   
+    text-align: center;
+  }
+  
+  
+ 
+ 
+  .aboutdesc p,h4{
+    width: 90%;
+    margin: auto;
+    
+  }
+  
+  
+  .aboutdesc ul{
+ margin-top: 30px;
+ margin-left: 40px;
+ }
+ .details ul{
+    margin: auto;
+   
+    width: 100%;
+    
+  }
+
+  header{
+  background-color: rgb(24, 34, 34);
+  height: auto;
+}
+
+header{
+  width: 100%;
+     position: fixed;
+     z-index: 2;
+     height: 80px;
+     margin-top: 0px;
+     font-size: small;
+     padding-top: 0px;
+    }
+      .header_link{
+        position: fixed;
+        left: -190%
+  }
+.headername{
+  margin-left: -50px;
+  width: 920px;
+  font-size: 13px;
+}
+
+.bar {
+  width: 40px;
+  height: 7px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(243, 237, 237);
+  font-size: 40px;
+  margin: 5px   ;
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar1{
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .hamburger.active .bar3 {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .header_link {
+    background-color: rgb(43, 54, 54);
+    padding-top: 160px;
+    padding-bottom: 20px;
+    height: auto;
+  } 
+  .header_link li{
+    font-size: larger;
+   width: 45%;
+   margin-top: 30px;
+    display: block;
+  }
+
+  .header_link.active {
+    left: 0%;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bio{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 120px;
+  }
+  .bio_image{
+    text-align: center;
+    height: 320px;
+
+  }
+  .bio_name{
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+  .bio_name{
+    
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .bio img{
+     width: 80%;
+     height: 90%;
+    margin-top: 70px;
+    margin-left: 0px;
+   
+  }
+  .intro h2{
+    margin-top: 20px;
+    margin-left: -30px;
+  }.intro h1{
+    margin-left: -35px;
+  }.intro h3{
+    margin-left: -30px;
+  }
+  .contact{
+    margin-top: 40px;
+    height: auto;
+   
+  }
+
+  
+  .projectbox{
+   
+    margin-top: -50px;
+    height: 1070px;
+  }
+
+  .work{
+    height: 500px;
+    margin-top: 0px;
+    
+    padding-bottom: 660px;
+  }
+  .pbchild{
+    width: 70%;
+     height:420px;
+    padding: 16px 0;
+   margin-top: 15px;
+  }
+  .pbinnerchild{
+    background: #000;
+    height: 80%;
+  }
+  .pbinnerchild img{
+    height: 247px;
+  
+  }
+  .home{
+    height: auto;
+    margin-top: -10px;
+  }
+  .bio{
+    height: auto;
+
+  }
+  .skills{
+    padding-left: 0px;
+  }
+  .hamburger{
+    width:auto;
+    margin-right: 10px;
+  }
+  
+  .workHead{
+    width: 60%;
+   margin-bottom:90px;
+   padding-left: 0px;
+  margin-top: -10px;
+  
+  }
+
+  .backend {
+    margin-right: 30px;
+    background: #000;
+    margin-top: 20px;
+  }
+.pbinnerchildlink{
+  margin-top:15px
+}
+.message{
+  
+   padding-top: 100px;
+}
+}
